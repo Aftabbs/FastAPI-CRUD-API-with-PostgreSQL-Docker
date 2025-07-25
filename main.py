@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr 
 from typing import Optional
 import psycopg2  
 from psycopg2.extras import RealDictCursor 
