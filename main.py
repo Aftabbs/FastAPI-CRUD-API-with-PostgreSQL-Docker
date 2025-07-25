@@ -5,7 +5,7 @@ import psycopg2
 from psycopg2.extras import RealDictCursor 
 
 DB_CONFIG = {
-    "dbname": "maindb",
+    "dbname": "maindb", 
     "user": "postgres",
     "password": "postgres",
     "host": "localhost",
