@@ -6,7 +6,7 @@ from psycopg2.extras import RealDictCursor
  
 DB_CONFIG = { 
     "dbname": "maindb",   
-    "user": "postgres",
+    "user": "postgres", 
     "password": "postgres",
     "host": "localhost",
     "port": 5432
@@ -107,6 +107,7 @@ def delete_student(student_id: int):
         return {"message": "Student deleted successfully", "student_id": student_id}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
 
 
 
