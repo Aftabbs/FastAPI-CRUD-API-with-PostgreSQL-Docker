@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, EmailStr 
 from typing import Optional
 import psycopg2  
-from psycopg2.extras import RealDictCursor   
+from psycopg2.extras import RealDictCursor    
   
 DB_CONFIG = { 
     "dbname": "maindb",   
@@ -107,6 +107,7 @@ def delete_student(student_id: int):
         return {"message": "Student deleted successfully", "student_id": student_id}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
 
 
 
